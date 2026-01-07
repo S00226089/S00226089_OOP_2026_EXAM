@@ -21,6 +21,7 @@ namespace S00226089_OOP_2026_EXAM
             return CurrentPowerKWH/PowerCapacityKWH;
         }
 
+        //battery display code, couldnt remember the formatting for percentage
         public string DisplayBatteryInformation() 
         {
             return 
@@ -33,8 +34,10 @@ namespace S00226089_OOP_2026_EXAM
 
         public override string ToString()
         {
-            return $"{RobotName} {RobotType}";
+            return $"{RobotName}";
         }
+
+        //enums for skills and delivery method
         public enum HouseholdSkill {Cooking, Cleaning, Laundry, Gardening, ChildCare }
 
         public enum DeliveryMode {Walking, Driving, Flying }

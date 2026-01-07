@@ -32,6 +32,7 @@ namespace S00226089_OOP_2026_EXAM
                 lstAllRobots.ItemsSource = selectedRobot.ToString();
             }
         }
+        //robot instantiation
         private void Window_Loaded(object sender, RoutedEventArgs e) 
         { 
             HouseholdRobot houseBot = new HouseholdRobot("Housebot 01", 25, 25, "I am a household robot.\nI can help with chores around the house."  );

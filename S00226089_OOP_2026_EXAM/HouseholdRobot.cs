@@ -16,20 +16,24 @@ namespace S00226089_OOP_2026_EXAM
             PowerCapacityKWH = powerCapacityKWH;
             CurrentPowerKWH = currentPowerKWH;
             RobotDescription = robotDescription;
+
+            //default on all household robots
+            Skills.Add(HouseholdSkill.Cleaning);
         }
         public override string DescribeRobot()
         {
-            return "I am a household robot.\nI can help with chores around the house.\n\nHousehold Robot Skills: \n" + Skills.ToString() + DisplayBatteryInformation().ToString();
+            return RobotDescription + "Household Robot Skills: \n" + Skills.ToString() + DisplayBatteryInformation().ToString();
         }
-        public HouseholdSkill DownloadSkill()
+
+        //method to attach skills to given robots, document suggested putting in delivery robot however its used in here
+        public void DownloadSkill()
         {
             if (RobotName == "GardenMate") Skills.Add(HouseholdSkill.Gardening);
 
-            if (RobotName == "HouseMate 3000") 
-            { 
-                Skills.Add (HouseholdSkill.Cooking);
-                Skills.Add ()
-            
+            if (RobotName == "HouseMate 3000")
+            {
+                Skills.Add(HouseholdSkill.Cooking);
+                Skills.Add(HouseholdSkill.Laundry);
             }
         }
     }
