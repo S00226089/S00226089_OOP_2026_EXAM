@@ -22,5 +22,6 @@
         <TextBlock Text="Robot List" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="1" Grid.Row="0"/>
         <TextBlock Text="Robot Details" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="2" Grid.Row="0"/>
         <ListBox x:Name="lstAllRobots" Grid.Row="1" Grid.Column="1" Margin="5" SelectionChanged="lstAllRobots_SelectionChanged"/>
+        
     </Grid>
 </Window>
