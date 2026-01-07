@@ -20,5 +20,10 @@ namespace S00226089_OOP_2026_EXAM
         {
             InitializeComponent();
         }
+
+        private void lstAllRobots_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
